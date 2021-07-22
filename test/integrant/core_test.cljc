@@ -2,7 +2,7 @@
   (:require #?(:clj  [clojure.test :refer [are deftest is testing]]
                :cljs [cljs.test :refer-macros [are deftest is testing]])
             [integrant.core :as ig]
-            [weavejester.dependency :as dep]))
+            [juxt.clojars-mirrors.dependency.v0v2v1.weavejester.dependency :as dep]))
 
 (def log (atom []))
 

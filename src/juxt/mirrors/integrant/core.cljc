@@ -1,11 +1,11 @@
-(ns integrant.core
+(ns juxt.mirrors.integrant.core
   (:refer-clojure :exclude [ref read-string run!])
   (:require #?(:clj  [clojure.edn :as edn]
                :cljs [clojure.tools.reader.edn :as edn])
             [clojure.walk :as walk]
             [clojure.set :as set]
             [clojure.string :as str]
-            [weavejester.dependency :as dep]))
+            [juxt.clojars-mirrors.dependency.v0v2v1.weavejester.dependency :as dep]))
 
 (defprotocol RefLike
   (ref-key [r] "Return the key of the reference.")
